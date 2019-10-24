@@ -1,4 +1,4 @@
-package org.xujin.halo.mock.dto;
+package org.xujin.halo.mock.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

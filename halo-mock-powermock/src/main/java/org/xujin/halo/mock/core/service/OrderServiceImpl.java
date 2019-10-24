@@ -1,10 +1,10 @@
-package org.xujin.halo.mock.service;
+package org.xujin.halo.mock.core.service;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.xujin.halo.mock.dto.OrderRequest;
-import org.xujin.halo.mock.dto.OrderResponse;
-import org.xujin.halo.mock.util.NotificationUtil;
+import org.xujin.halo.mock.core.util.NotificationUtil;
+import org.xujin.halo.mock.core.dto.OrderRequest;
+import org.xujin.halo.mock.core.dto.OrderResponse;
 
 @Service
 public class OrderServiceImpl implements OrderService {

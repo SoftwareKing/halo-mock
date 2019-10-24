@@ -1,7 +1,7 @@
-package org.xujin.halo.mock.service;
+package org.xujin.halo.mock.core.service;
 
-import org.xujin.halo.mock.dto.OrderRequest;
-import org.xujin.halo.mock.dto.OrderResponse;
+import org.xujin.halo.mock.core.dto.OrderRequest;
+import org.xujin.halo.mock.core.dto.OrderResponse;
 
 /**
  * 支付订单Service

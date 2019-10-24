@@ -22,6 +22,7 @@
 
 	<modules>
         <module>halo-mock-powermock</module>
+		<module>halo-mock-mulit</module>
     </modules>
 
 

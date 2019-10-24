@@ -33,4 +33,48 @@ https://www.jianshu.com/p/51930cc5dcf9
 https://github.com/hehonghui/mockito-doc-zh
 
 https://blog.csdn.net/luo15242208310/article/details/100098274
+
 http://www.thinkcode.se/blog/2012/02/18/test-coverage-in-a-multi-module-maven-project
+
+https://blog.csdn.net/onepersontz/article/details/58098729
+
+https://blog.csdn.net/hotdust/article/details/53406044
+
+https://www.jianshu.com/p/506a30b57ff7
+
+
+##命令介绍
+
+https://www.cnblogs.com/qyf404/archive/2015/12/12/5040593.html
+
+
+* cobertura:check
+
+   根据最新的源码标记(生成的class文件)校验测试用例的覆盖率,如果没有达到要求,则执行失败.
+
+* cobertura:check-integration-test
+
+   这个命令和cobertura:check功能是一样的,区别是二者绑定的maven生命周期不一样.cobertura:check绑定了test, cobertura:check-integration-test绑定了verify.再说的明白些,maven生命周期中有一个是test跑得单元测试,还有一个是integration-test跑的集成测试.而verify前就是integration-test.即cobertura:check-integration-test比cobertura:check涵盖的测试用例更多.
+
+* cobertura:clean
+
+   这个好理解,就是清理掉目录/target/cobertura/中得文件.目前发现里面就一个文件cobertura.ser.
+
+* cobertura:cobertura
+
+   这个插件的关键命令.标记被编译的文件,运行单元测试,生成测试报告.
+
+*  cobertura:cobertura-integration-test
+
+    和cobertura:cobertura做了一样的事情,区别是包含了集成测试用例.
+
+*  cobertura:dump-datafile
+
+    在命令行输出覆盖率数据.数据依据是生成的class文件.这个命令我没搞懂他的意义何在.在后面一个有趣的实验我们会用这个命令来更好的理解cobertura-maven-plugin.
+
+*  cobertura:help
+
+*  cobertura:instrument
+
+    标记被编译的class文件.执行这个命令会在目录/target/generated-classes/cobertura下生成一套class文件.
+

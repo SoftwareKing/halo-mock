@@ -1,4 +1,4 @@
-package org.xujin.halo.mock.util;
+package org.xujin.halo.mock.core;
 
 /**
  * 模拟通知util

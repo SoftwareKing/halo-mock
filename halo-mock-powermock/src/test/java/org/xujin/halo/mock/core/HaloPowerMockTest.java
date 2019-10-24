@@ -1,4 +1,4 @@
-package org.xujin.halo.mock;
+package org.xujin.halo.mock.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -14,10 +14,10 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import org.xujin.halo.mock.dto.OrderRequest;
-import org.xujin.halo.mock.dto.OrderResponse;
-import org.xujin.halo.mock.service.OrderServiceImpl;
-import org.xujin.halo.mock.util.NotificationUtil;
+import org.xujin.halo.mock.core.dto.OrderRequest;
+import org.xujin.halo.mock.core.dto.OrderResponse;
+import org.xujin.halo.mock.core.service.OrderServiceImpl;
+import org.xujin.halo.mock.core.util.NotificationUtil;
 
 /**
  *

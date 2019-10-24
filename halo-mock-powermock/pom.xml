@@ -113,6 +113,33 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <check>
+                        <!--每个类的分支覆盖率-->
+                        <branchRate>85</branchRate>
+                        <!--每个类的代码行覆盖率-->
+                        <lineRate>85</lineRate>
+                        <!--校验失败则中止.即为true时如果校验失败则打包执行失败,反之则只是打出告警日志-->
+                        <haltOnFailure>false</haltOnFailure>
+                        <!--整体的分支覆盖率-->
+                        <totalBranchRate>85</totalBranchRate>
+                        <!--整体的代码行覆盖率-->
+                        <totalLineRate>85</totalLineRate>
+                        <!--每个包的分支行覆盖率-->
+                        <packageBranchRate>85</packageBranchRate>
+                        <!--每个包的代码行覆盖率-->
+                        <packageLineRate>85</packageLineRate>
+                        <regexes>
+                            <!--通过表达式设定覆盖率伐值-->
+                            <regex>
+                                <pattern>org.xujin.halo.mock.*</pattern>
+                                <branchRate>90</branchRate>
+                                <lineRate>80</lineRate>
+                            </regex>
+                        </regexes>
+                    </check>
+                </configuration>
             </plugin>
         </plugins>
 
