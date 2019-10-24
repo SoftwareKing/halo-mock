@@ -31,11 +31,12 @@ public class HaloPowerMockTest {
 	@InjectMocks
 	private OrderServiceImpl service;
 
-	OrderRequest request = new OrderRequest(111, "Mobile", 1, 10000, "Software_King@qq.com", true);
+	private static OrderRequest request;
 
 	@Before
 	public void init() {
 		MockitoAnnotations.initMocks(NotificationUtil.class);
+		request= new OrderRequest(111, "Mobile", 1, 10000, "Software_King@qq.com", true);
 	}
 
 	/**
