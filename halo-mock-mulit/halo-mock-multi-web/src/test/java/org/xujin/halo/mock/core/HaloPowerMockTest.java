@@ -17,7 +17,7 @@ import static org.mockito.Mockito.when;
  * @author xujin
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(fullyQualifiedNames = "org.xujin.halo.mock.*")
+@PrepareForTest({Calculator.class,NotificationUtil.class})
 public class HaloPowerMockTest {
 
 	@Before
