@@ -78,3 +78,6 @@ https://www.cnblogs.com/qyf404/archive/2015/12/12/5040593.html
 
     标记被编译的class文件.执行这个命令会在目录/target/generated-classes/cobertura下生成一套class文件.
 
+### Java 各种Mock工具比较，JMockit无敌
+
+https://blog.csdn.net/imi00/article/details/79306028

@@ -24,6 +24,7 @@
         <module>halo-mock-powermock</module>
 		<module>halo-mock-mulit</module>
 		<module>halo-mock-multimodule</module>
+		<module>halo-mock-springtest</module>
     </modules>
 
 
