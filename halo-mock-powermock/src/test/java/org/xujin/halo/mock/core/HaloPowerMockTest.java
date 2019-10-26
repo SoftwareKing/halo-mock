@@ -48,11 +48,11 @@ public class HaloPowerMockTest {
 		String emailid = "Software_King@qq.com";
 		PowerMockito.mockStatic(NotificationUtil.class);
 		// When
-		when(NotificationUtil.sendEmail(emailid)).thenReturn("success1");
+		when(NotificationUtil.sendEmail(emailid)).thenReturn("successs");
 		// Then
 		OrderResponse response = service.checkOutOrder(request);
 		//验证结果
-		assertEquals("success1", response.getMessage());
+		assertEquals("success", response.getMessage());
 	}
 
 

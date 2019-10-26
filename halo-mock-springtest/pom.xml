@@ -60,8 +60,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- 设置单测覆盖率输出的位置 -->
-					<outputDirectory>./target/tmpCobertura</outputDirectory>
+					<!-- 设置单测覆盖率输出的位置
+					<outputDirectory>./target/tmpCobertura</outputDirectory>-->
 					<check>
 						<!--每个类的分支覆盖率-->
 						<branchRate>85</branchRate>

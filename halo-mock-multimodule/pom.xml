@@ -39,15 +39,8 @@
                </formats>
                <aggregate>true</aggregate>
                <outputDirectory>${project.build.directory}/reports/cobertura</outputDirectory>
-                    <filesets>
-                        <fileset>
-                            <directory>.</directory>
-                            <includes>
-                                <include>**/*.ser</include>
-                            </includes>
-                        </fileset>
-                    </filesets>
-               
+               <check>
+               </check>
             </configuration>
             <executions>
                <execution>
